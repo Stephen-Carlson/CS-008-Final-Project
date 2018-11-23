@@ -1,9 +1,34 @@
 *{
     background-color:#4a525a;
     color: white;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 16pt;
+    font-variant: small-caps;
+}
+image{
+    max-width: 100%;
 }
 h1{
     background-color: #004ba8;
     border: thick solid #86bbd8;
     border-radius: 0.5em;
+}
+nav ol li{
+    display: inline-block;
+    list-style-type: none;
+    width: 15%;
+    margin: 0 auto 0 auto;
+    text-align:center;
+    padding: 10px;
+    align-content: center;
+    background-color: #4a525a;
+    
+    
+}
+footer p{
+    width: 100%;
+    text-align: center;
+}
+header figure{
+    text-align: center;
 }
