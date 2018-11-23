@@ -8,14 +8,14 @@ $pathparts = pathinfo($phpSelf);
 <!DOCTYPE html>
 <html lang='en'>
     <head>
-        <title> PHP: Form Example</title>
+        <title>The Shtick</title>
         
         <meta charset ='utf-8'>
         <meta name ="author" content ="Stephen Carlson, Austin Lee, Henry Von Hagke">
-        <meta name ="description" content="Offical Website for ___________">
+        <meta name ="description" content="Offical Website for The Shtick">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="stylesheet" href="css/custom.css" type="text/css" media="screen">       
+        <link rel="stylesheet" href="css/band.css" type="text/css" media="screen">       
     <?php
         $debug = false;
 
