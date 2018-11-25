@@ -5,7 +5,7 @@ include ('top.php');
 
 
     <figure class="img-right  roundedCornersSmall small">
-        <img class="roundedCornersSmall" alt="Concert" src="../Images/homepic.png">
+        <img class="roundedCornersSmall" alt="Concert" src="../photos/homepic.png">
         <figcaption>London, UK (1994) - Love Tour</figcaption>
     </figure>
     <h1>Our Home</h1>
