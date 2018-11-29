@@ -68,9 +68,9 @@ if (isset($_POST["btnSubmit"])) {
   
     print PHP_EOL . '<!-- SECTION: 2c Validation -->' . PHP_EOL;
     
-    if($contact!= "All Emails" AND $age != "Limited Emails" AND $age != "No Emails"){
+    if($contact!= "All Emails" AND $contact != "Limited Emails" AND $contact != "No Emails"){
         $errormsg[] = "Please select your communication prefrences";
-        $ageERROR = true;
+        $contactERROR = true;
     }
     if (isset($_POST["chkfindGoogle"])) {
         $findGoogle = true;
@@ -207,7 +207,7 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
             print '<p>To: ' . $email . '</p>';
             print($message);
         } else {
-            print '<h2>Register Today</h2>';
+            print '<h2>Let Us Know!</h2>';
             print '<p class="form-heading">Your information will greatly help us with our research.</p>';
 
             //####################################
@@ -333,7 +333,7 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                         </p>
                     </fieldset>
 
-                    <fieldset class="radio <?php if($ageERROR) print 'mistake';?>">
+                    <fieldset class="radio <?php if($contactERROR) print 'mistake';?>">
                         <legend>How would you like to be contacted?</legend>
                         <p>
                             <label class="radio-field">
