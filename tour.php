@@ -3,9 +3,6 @@ include 'top.php';
 
 print PHP_EOL . '<!-- SECTION: 1a. debugging setup -->' . PHP_EOL;
 
-print '<pre>';
-print_r($_POST);
-print '</pre>';
 
 print PHP_EOL . '<!-- SECTION: 1b form variables -->' . PHP_EOL;
 $states = array('Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia','Hawaii','Idaho','Illinios','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachesetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','Wisconsin','West Virginia','Wyoming', 'Outside US');
@@ -317,20 +314,19 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                             </p>
                             </fieldset>
                     <fieldset class="listbox <?php if ($stateERROR) print "mistake"; ?>">
-                        <p>
-                        <legend>What State are you from?</legend>
+                        <legend id='lst'><span id='lstLegend'>What State are you from?</span></legend>
                         <select id="lstRegion"
                                 name="lstRegion"
                                 tabindex="520">
                             <?php
                             foreach($states as $state) {?>
-                            <option value="<?php $state['states']?>"><?= $state['states'] ?></option>
+                            <option value="<?php $state?>"><?= $state ?></option>
                             <?php
                             } ?>
                                
                             
                         </select>
-                        </p>
+                       
                     </fieldset>
 
                     <fieldset class="radio <?php if($contactERROR) print 'mistake';?>">

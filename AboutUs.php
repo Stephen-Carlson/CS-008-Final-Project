@@ -9,12 +9,12 @@ include ('top.php');   //includes the top
         <img src="placeholder" alt="A picture of the band">  <!-- Insert picture of band btw -->
         <figcaption>The band</figcaption>
     </figure>
-    <p>The Schtick is one of the most talented band around.  Debuting in October of 2018, The Schtick has already had three singles in the top charts in both the US and Morocco.  The band currently has 4 members; Bob, Robert, Erick, and Memelord, Destroyer of Worlds.  The Schtick is currently on a yearlong, worldwide tour, traveling to places like the US, Germany, Poland, Russia, South Korea, and Egypt.  In addition, they are releasing a new 69 song album next month, called Please Give Me an A Thanks You, featuring Smash Mouth, Liliam Pumpernickel, and Kelpy G.  In addition, The Schtick is re-mastering an old time classic and fan favorite, The Garfield Kart™ Title Screen Theme,  by Artefacts Studios.</p>   
+    <p>The Shtick is one of the most talented bands around.  Debuting in October of 2018, The shtick has already had three singles in the top charts in both the US and Morocco.  The band currently has 4 members; Bob, Robert, Erick, and Memelord, Destroyer of Worlds.  The shtick is currently on a yearlong, worldwide tour, traveling to places like the US, Germany, Poland, Russia, South Korea, and Egypt.  In addition, they are releasing a new 69 song album next month, called Please Give Me an A Thanks You, featuring Smash Mouth, Liliam Pumpernickel, and Kelpy G.  In addition, The shtick is re-mastering an old time classic and fan favorite, The Garfield Kart™ Title Screen Theme,  by Artefacts Studios.</p>   
 </article>
 
 <!-- introduction to bob -->
 <article class = "AboutBob">
-    <h2>Meet Bob</h2>
+    <h3><span>Meet Bob</span></h3>
     <figure>
         <img src="placeholder" alt="A picture of Bob">  <!-- Insert picture of bob btw -->
     <figcaption>Bob, 2017</figcaption>    
@@ -23,7 +23,7 @@ include ('top.php');   //includes the top
 </article>
 
 <article class ="AboutRobert">
-    <h3>Meet Robert</h3>
+    <h3><span>Meet Robert</span></h3>
     <figure>
         <img src="placeholder" alt="A picture of Robert">  <!-- Insert picture of robby btw -->
     <figcaption>Rob</figcaption>    
@@ -34,18 +34,18 @@ include ('top.php');   //includes the top
 
 
 <article class = "AboutErick">
-    <h4>Meet Erick</h4>
+    <h4><span>Meet Erick</span)</h4>
     <figure>
         <img src="placeholder" alt="A picture of E-dog">  <!-- Insert picture of e-dog btw -->
     <figcaption>E-dog in the flesh</figcaption>    
     </figure>    
-    <p>Hello my esteemed fans, I am known as Erick, the lead kazooist of The Schtick.  As an aspiring master kazooist, I make it my religion to practice kazoo for 25 hours a day. My kazoo is not just an instrument; it is a lifestyle.  Since the creation of the band, I have invented the never before seen electric kazoo. I plan on creating an improved atomic kazoo by the time our tour ends.  Thank you very much, and enjoy the tour.</p>
+    <p>Hello my esteemed fans, I am known as Erick, the lead kazooist of The shtick.  As an aspiring master kazooist, I make it my religion to practice kazoo for 25 hours a day. My kazoo is not just an instrument; it is a lifestyle.  Since the creation of the band, I have invented the never before seen electric kazoo. I plan on creating an improved atomic kazoo by the time our tour ends.  Thank you very much, and enjoy the tour.</p>
 </article>
 
 
 
 <article class ="AboutMemelord">
-    <h5>Meet Memelord</h5>
+    <h5><span>Meet Memelord</span></h5>
     <figure>
         <img src="placeholder" alt="A picture of Memelord">  <!-- Insert picture of meme btw -->
     <figcaption>Memelord</figcaption>    
