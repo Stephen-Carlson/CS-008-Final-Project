@@ -3,17 +3,34 @@
     color: white;
     font-family: "Arial Black", Gadget, sans-serif;
     font-size: 16pt;
-    font-variant: small-caps;
+    padding: 5px;
+    
+    
 }
 image{
     max-width: 100%;
 }
 h1{
-    background-color: #004ba8;
-    border: thick solid #86bbd8;
-    border-radius: 0.5em;
+    font-size: 24pt; 
+    background-color: #05668d;
+    padding: 10px;
+    border-bottom: solid thick #06d6a0;
+    border-left: solid thick white;
+}
+h2{
+    background-color: #05668d;
+    font-size: 24pt;
+    border-bottom: solid thick #06d6a0;
+    border-left: solid thick white;
+} 
+span{
+    background-color: #05668d;
+    font-size: 20pt;
+    border-bottom: solid thick #06d6a0;
+    border-left: solid thick white;
 }
 nav ol li{
+    font-variant: small-caps;
     display: inline-block;
     list-style-type: none;
     width: 15%;
@@ -29,6 +46,53 @@ footer p{
     width: 100%;
     text-align: center;
 }
+fieldset{
+    border: none;
+    border-top: solid thick #06d6a0;
+}
+fieldset legend{
+    border-bottom: thick solid #06d6a0;
+    background-color: #05668d;
+    border-left: thick solid white;
+    border-right: thick solid white;
+    border-top: thick solid #06d6a0;
+}
+#lst{
+    border:none;
+    background-color: transparent;
+    padding-bottom: 20px
+}
+#lstLegend{
+    border-bottom: thick solid #06d6a0;
+    background-color: #05668d;
+    border-left: thick solid white;
+    border-right: thick solid white;
+    border-top: thick solid #06d6a0;
+}
+#txtwriteMessage input{
+    width:100%;
+    color: black;
+    background-color: white;
+}
 header figure{
     text-align: center;
+}
+p{
+    font-variant:none;
+    
+}
+.buttons{
+    text-align: center;
+}
+.mistake{
+    color: red;
+}
+#errors ol li{
+    color: red;
+}
+.radio p{
+    display: inline-block;
+}
+.listbox{
+    padding-bottom: 20px;
 }
