@@ -3,9 +3,11 @@ include 'top.php';
 
 print PHP_EOL . '<!-- SECTION: 1a. debugging setup -->' . PHP_EOL;
 
-
+print '<p>Post Array:</p><pre>';
+print_r($_POST);
+print '</pre>';
 print PHP_EOL . '<!-- SECTION: 1b form variables -->' . PHP_EOL;
-$states = array('Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia','Hawaii','Idaho','Illinios','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachesetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','Wisconsin','West Virginia','Wyoming', 'Outside US');
+$states = array('','Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia','Hawaii','Idaho','Illinios','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachesetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','Wisconsin','West Virginia','Wyoming', 'Outside US');
 
 
 $contact='All Emails';
@@ -140,7 +142,7 @@ if (isset($_POST["btnSubmit"])) {
 
         // Setup CSV File
         $myFolder = 'data/';
-        $myFileName = 'registration';
+        $myFileName = 'join';
         $fileExt = '.csv';
         $filename = $myFolder . $myFileName . $fileExt;
         if ($debug) print PHP_EOL . '<p>Filename is ' . $filename;
@@ -315,8 +317,8 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                             </fieldset>
                     <fieldset class="listbox <?php if ($stateERROR) print "mistake"; ?>">
                         <legend id='lst'><span id='lstLegend'>What State are you from?</span></legend>
-                        <select id="lstRegion"
-                                name="lstRegion"
+                        <select id="lstState"
+                                name="lstState"
                                 tabindex="520">
                             <?php
                             foreach($states as $state) {?>
