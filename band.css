@@ -8,8 +8,17 @@ body{
     font-size: 16pt;
     padding: 5px;   
 }
+header{
+    background: url(../images/bannerpic.jpg)no-repeat center center;
+    width:100%;
+    background-size: 100%;
+    border-radius:1.5em;
+}
 image{
     max-width: 100%;
+}
+input{
+    color:black;
 }
 h1{
     font-size: 24pt; 
@@ -34,14 +43,21 @@ nav ol li{
     font-variant: small-caps;
     display: inline-block;
     list-style-type: none;
-    width: 15%;
+    width: 14%;
     margin: 0 auto 0 auto;
     text-align:center;
     padding: 10px;
     align-content: center;
     background-color: #4a525a;
-    
-    
+    border: medium solid white;
+    border-radius:2.5em;
+    padding-left: 18px;
+}
+nav ol li:hover{
+    background-color: #06d6a0
+}
+.activepage{
+    background-color: #06d6a0
 }
 footer p{
     width: 100%;
@@ -70,6 +86,9 @@ fieldset legend{
     border-right: thick solid white;
     border-top: thick solid #06d6a0;
 }
+#lstRegion{
+    color:black;
+}
 #txtwriteMessage input{
     width:100%;
     color: black;
@@ -81,6 +100,9 @@ header figure{
 p{
     font-variant:none;
     
+}
+figcaption{
+    font-size: 28pt;
 }
 .buttons{
     text-align: center;
@@ -96,6 +118,10 @@ p{
 }
 .listbox{
     padding-bottom: 20px;
+    color:black;
+}
+#lstState{
+    color:black;
 }
 
 /*stuff for the pictures xdddd ###############################################*/
@@ -168,5 +194,38 @@ tr:nth-child(even) {
 tr:hover{
     background-color: darkgray;
 }
+#tour h1{
+    text-align: center;
+    font-size: 28pt;
+}
+#tour table{
+    border-collapse: collapse;
+    
+}
+#tour th, td{
+    border: solid medium #f26df9;
 
-
+    
+}
+#tour th, td:hover{
+    background-color: #f26df9;
+}
+#member img{
+    padding: 15px;
+    float:right;
+}
+.roundedCornersSmall{
+    border-radius: 2.5em;
+}
+#AboutUs figure img{
+     border-radius: 2.5em;
+}
+#home figure{
+    text-align: center;
+}
+#hashtag{
+    border:none;
+}
+#btnSubmit{
+    background-color:  #05668d; 
+}

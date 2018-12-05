@@ -17,7 +17,7 @@ $findSoundcloud = false;
 $findOther = false;
 $writeMessage = '';
 $firstName - '';
-$email = 'shcarlso@uvm.edu';
+$email = '';
 $state = '';
 
 print PHP_EOL . '<!-- SECTION: 1c form error flags -->' . PHP_EOL;
@@ -243,7 +243,7 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                         name = "txtEmail"
                         onfocus = "this.select()"
                         placeholder = "Enter your email address"
-                        tabindex = "120"
+                        tabindex = "10"
                         type = "text"
                         value = "<?php print $email; ?>"
                         >
@@ -258,7 +258,7 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                            name = "txtFirstName"
                            onfocus= "this.select()"
                            placeholder ="Enter your First Name"
-                           tabindex="100"
+                           tabindex="20"
                            type="text"
                            value="<?php print $firstName; ?>"
                            >
@@ -271,7 +271,7 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                         name="txtwriteMessage"
                         onfocus="this.select()"
                         placeholder ="Tell us something!"
-                        tabindex="110"
+                        tabindex="30"
                         type="text"
                         value="<?php print $writeMessage ?>"
                         >
@@ -283,7 +283,7 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                                         <input <?php if($findGoogle) print "checked"; ?>
                                             id="chkfindGoogle"
                                             name="chkfindGoogle"
-                                            tabindex="140"
+                                            tabindex="40"
                                             type="checkbox"
                                             value="Google">Google</label>
                             </p>
@@ -292,7 +292,7 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                                         <input <?php if($findSpotify) print "checked"; ?>
                                             id="chkfindSpotify"
                                             name="chkfindSpotify"
-                                            tabindex="160"
+                                            tabindex="50"
                                             type="checkbox"
                                             value="Spotify">Spotify</label>
                             </p>
@@ -301,7 +301,7 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                                         <input <?php if($findSoundcloud) print "checked"; ?>
                                             id="chkfindSoundcloud"
                                             name="chkfindSoundcloud"
-                                            tabindex="180"
+                                            tabindex="60"
                                             type="checkbox"
                                             value="Soundcloud">Soundcloud</label>
                             </p>
@@ -310,7 +310,7 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                                         <input <?php if($findOther) print "checked"; ?>
                                             id="chkfindOther"
                                             name="chkfindOther"
-                                            tabindex="180"
+                                            tabindex="70"
                                             type="checkbox"
                                             value="Other">Other</label>
                             </p>
@@ -319,7 +319,7 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                         <legend id='lst'><span id='lstLegend'>What State are you from?</span></legend>
                         <select id="lstState"
                                 name="lstState"
-                                tabindex="520">
+                                tabindex="80">
                             <?php
                             foreach($states as $state) {?>
                             <option value="<?php $state?>"><?= $state ?></option>
@@ -339,7 +339,7 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                                        id="radContactAll"
                                        name="radContactAll"
                                        value="All Emails"
-                                       tabindex="20"
+                                       tabindex="90"
                                        <?php if($contact == "All Emails") echo 'checked= "checked"'; ?>>All Emails</label>
                                        </p>
                         <p>
@@ -348,7 +348,7 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                                        id="radContactLimit"
                                        name="RadContactLimit"
                                        value="Limited Emails"
-                                       tabindex="40"
+                                       tabindex="100"
                                        <?php if($contact =="Limited Emails") echo 'checked= "checked"'; ?>>Limited Emails</label>
                                        </p>
                         <p>
@@ -357,7 +357,7 @@ print PHP_EOL . '<!-- SECTION 3 Display Form -->' . PHP_EOL;
                                        id="radContactNone"
                                        name="radContactNone"
                                        value="No Emails"
-                                       tabindex="60"
+                                       tabindex="110"
                                        <?php if($contact == "No Emails") echo 'checked= "checked"'; ?>>No Emails</label>
                                        </p>               
                     
